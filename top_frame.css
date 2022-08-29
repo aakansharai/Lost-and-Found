@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainStrip{
+    width: 100%;
+    background: #0ACE5F;
+    background: -moz-linear-gradient(left, #0ACE5F 0%, #10A0A4 50%, #0029C5 100%);
+    background: -webkit-linear-gradient(left, #0ACE5F 0%, #10A0A4 50%, #0029C5 100%);
+    background: linear-gradient(to right, #0ACE5F 0%, #10A0A4 50%, #0029C5 100%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding:10px 0 10px 0;
+}
+.menuStrip{
+    background: black;
+    color: white;
+    padding: 11px 0 11px 0;
+    font-size: 19px;
+}
+.menuStrip ul{
+    list-style: none;
+    display: flex;
+}
+.menuStrip ul li{
+    margin-left:20px;
+}
+.menuStrip ul li:hover{
+    cursor: pointer;
+}
+.profile{
+    float:right;
+    margin-right: 20px;
+}

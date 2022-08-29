@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.overview{
+    position: relative;
+}
+.mainStrip{
+    position: absolute;
+    width: 100%;
+    background: #0ACE5F;
+    background: -moz-linear-gradient(left, #0ACE5F 0%, #10A0A4 50%, #0029C5 100%);
+    background: -webkit-linear-gradient(left, #0ACE5F 0%, #10A0A4 50%, #0029C5 100%);
+    background: linear-gradient(to right, #0ACE5F 0%, #10A0A4 50%, #0029C5 100%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding:10px 0 10px 0;
+}
