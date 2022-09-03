@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <style>
+           *{
+                margin: 0;
+                padding: 0;
+                background-color: red;
+           }
+           form{
+                margin: 20px 30px 0px 30px;
+                font-family: 'Rubik', sans-serif;
+           }
+           .largeContainer{
+                height: 700px;
+                padding: 20px 300px 50px 300px;
+           }
+           legend{
+                text-align: center;
+                font-size: 30px;
+           }
+           .type{
+                float: left;
+                font-size: 20px;
+           }
+           .picture{
+                float: right;
+                font-size: 20px;
+           }
+           input{
+                font-size: 15px;
+           }
+           .description{
+                font-size: 20px;
+                margin-top: 100px;
+                text-align: center;
+           }
+           select{
+                font-size: 13px;
+           }
+           .button{
+                margin-top: 100px;
+                width: 100%;
+                text-align: center;
+           }
+           .submitForm{
+                font-size: 20px;
+                border-radius: 15px;
+                padding: 10px 25px;  
+           }
+           .submitForm:hover{
+                cursor: pointer;
+           }
+           textarea{
+                font-size: 18px;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="itemDesc">
+            <form action="ItemDetails">
+                <fieldset>
+                    <legend> Item Details </legend>
+                    
+                    <div class="largeContainer">
+                        <!-- item type  -->
+
+                        <div class="type" style="float: left"> 
+                            <label class="select">Item Type</label><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="state" class="form-control selectpicker" >
+                                <option value=" ">select the type of item you found</option>
+                                <option>Identity documents</option>
+                                <option>Electronic item</option>
+                                <option>Any type of banking card</option>
+                                <option>Other</option>
+                             
+                            </select>
+                            </div>
+                        </div>
+
+                        <!-- Uploading photographs  -->
+                        <div class="picture">
+                            <label for="picture">Upload picture of found item</label><br>
+                            <input type="file" accept="image/*" id="foundItemPicture">
+                        </div>
+                        
+                        <!-- Description -->
+                        <div class="description">
+                            <label for="itemDescriptions">Item's Description</label><br>
+                            <textarea rows="15" cols="70"></textarea>
+                        </div>
+
+                        <!-- submit button  -->
+                        <div class="button">
+                            <button class="submitForm">Submit</button>
+                        </div>
+
+                    </div> 
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
