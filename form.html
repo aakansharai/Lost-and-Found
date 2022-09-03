@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <style>
+            .container{
+                font-family: 'Rubik', sans-serif;
+                width: 100%;
+            }
+            label{
+                font-size: 20px;
+            }
+            .container legend{
+                font-size:30px;
+            }
+            .form-group{
+                padding:10px 0 10px 0;
+                font-size:18px;
+                width: 100%;
+            }
+            .form-group input{
+                font-size:18px;
+            }
+            .form-group button{
+                font-size:20px;
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 5px 20px 5px 20px;
+            }
+            .form-group select{
+                font-size:16px;
+            }
+            .formContainerLeft{
+                float: left;
+                margin: 30px 10px 30px 100px;
+               
+            }
+            .formContainerRight{
+                float: right;
+                margin: 30px 100px 20px 10px;
+            }
+            legend{
+                text-align: center;
+            }
+            .output{
+                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 370px;
+            }
+            #next{
+                margin-bottom: 20px;
+            }
+            #a:hover{
+                cursor: pointer;
+            }
+        </style>
+        <!-- <script type="text/javascript">
+            document.getElementById("next").onclick = function(){
+                location.href = "itemDetails.html";
+            }
+        </script> -->
+    </head>
+    <body>
+        <!-- FORM  -->
+        <div class="container">
+
+            <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Personal Details</legend>
+        
+        <!-- Left form container  -->
+        <div class="formContainerLeft">
+            <div class="form-group" style="float:left">
+                <label class="col-md-4 control-label">First Name</label>  
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input  name="first_name"  class="form-control"  type="text">
+                  </div>
+                </div>
+              </div><br>
+
+                <!-- Text input-->
+                <div class="form-group" style="float: left">
+                    <label class="col-md-4 control-label">E-Mail</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" class="form-control"  type="text">
+                    </div>
+                    </div>
+                </div><br>
+
+                <!-- Text input-->
+              
+                <div class="form-group" style="float: left">
+                    <label class="col-md-4 control-label">Address</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                    <input name="address" class="form-control" type="text">
+                    </div>
+                    </div>
+                </div><br>
+
+                <!-- Select Basic -->
+           
+                <div class="form-group" style="float: left"> 
+                    <label id="select" class="col-md-4 control-label">State</label><br>
+                    <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="state" class="form-control selectpicker" >
+                        <option value=" " >Please select your state</option>
+                        <option>Asaf Ali Road</option>
+                        <option>Bhikaji Cama Palace</option>
+                        <option>Chandni Chowk Old Delhi</option>
+                        <option>Chhattarpur</option>
+                        <option>Chirag Enclave</option>
+                        <option>Civil Lines</option>
+                        <option>Connaught Place</option>
+                        <option>Defence Colony</option>
+                        <option> Diplomatic Enclave</option>
+                        <option>Dwarka</option>
+                        <option>East of Kailash</option>
+                        <option>Friends Colony</option>
+                        <option>Golf Links</option>
+                        <option>Greater Kailash - I</option>
+                        <option>Green Park</option>
+                        <option>IIT</option>
+                        <option> International Airport</option>
+                        <option>Karol Bagh</option>
+                        <option>Lajpat Nagar</option>
+                        <option>Mayur Vihar</option>
+                        <option>Mehrauli Gurgaon Road</option>
+                        <option> Naraina</option>
+                        <option>Narela</option>
+                        <option>Nehru Place</option>
+                        <option>New Friends Colony</option>
+                        <option>Nizammuddin</option>
+                        <option>Paharganj</option>
+                        <option>Panchshil Enclave</option>
+                        <option>Paschim Vihar</option>
+                        <option>Patel Nagar</option>
+                        <option>Pushpanjali Farms</option>
+                        <option>Qutab</option>
+                        <option>Rajendra Place</option>
+                        <option>Rajokri</option>
+                        <option>Saket</option>
+                        <option>Samalka</option>
+                        <option>Sangam Vihar</option>
+                        <option>Shahdara</option>
+                        <option>Shalimar Bagh</option>
+                        <option>Shiv Murti</option>
+                        <option>Sundar Nagar</option>
+                        <option>Vasant Kunj</option>
+                        <option>Vasant Vihar</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right form container   -->
+        <div class="formContainerRight">
+
+            <!-- Text input-->
+        
+            <div class="form-group">
+                <label class="col-md-4 control-label" >Last Name</label> 
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="last_name"  class="form-control"  type="text">
+                </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+               
+            <div class="form-group">
+                <label class="col-md-4 control-label">Phone</label>  
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                <input name="phone" class="form-control" type="text">
+                </div>
+                </div>
+            </div>
+
+             <!-- Text input-->
+            
+             <div class="form-group">
+                <label class="col-md-4 control-label">City</label>  
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input name="city" class="form-control"  type="text">
+                </div>
+                </div>
+            </div><br>
+
+            <!-- Text input-->
+        
+            <div class="form-group">
+                <label class="col-md-4 control-label">Zip Code</label>  
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input name="zip" class="form-control"  type="text">
+                </div>
+            </div>
+            </div>
+        </div>
+      
+        <div class="output">
+            
+            <!-- Button -->
+            <div class="form-group">
+                <a href="itemDetails.html" target="content-left"><Button>Next</Button></a>
+            </div>
+ 
+        </div>
+        
+        </fieldset>
+        </form>
+            </div>
+        </div>
+    </body>
+</html>
